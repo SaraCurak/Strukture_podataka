@@ -1,11 +1,11 @@
 /*
 
-Definirati strukturu osoba (ime, prezime, godina roğenja) i napisati program koji:
-a) dinamièki dodaje novi element na poèetak liste,
+Definirati strukturu osoba (ime, prezime, godina roÄ‘enja) i napisati program koji:
+a) dinamiÄki dodaje novi element na poÄetak liste,
 b) ispisuje listu,
-c) dinamièki dodaje novi element na kraj liste,
+c) dinamiÄki dodaje novi element na kraj liste,
 d) pronalazi element u listi (po prezimenu),
-e) briše odreğeni element iz liste,
+e) briÅ¡e odreÄ‘eni element iz liste,
 U zadatku se ne smiju koristiti globalne varijable.
 
 
@@ -183,7 +183,7 @@ int PronalaziPrezime(node** head)
 int brisanje(node** head)
 {
     node* TempNode = *head;
-    node* TempNodePrev;
+    node* TempNodePrev= nullptr;
     char TempPrez[MAX];
 
     if (TempNode == NULL) {
@@ -225,7 +225,7 @@ int IspisiIzbornik()
     printf("3-Brisanje osobe\n");
     printf("4-Pronalazak osobe\n");
     printf("5-Ispis liste\n\n");
-
+    return 0;
 }
 
 int IspisiOsobu(node* Temp) {
