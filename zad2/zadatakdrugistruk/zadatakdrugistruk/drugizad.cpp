@@ -22,6 +22,7 @@ d) nac osobu po prezimenu proc po listi if i strcmp
  ako su dvi osobe istog prezimena NE RADI, vata prvu na koju naleti
  POPRAVIT
 e) nije bitno samo tu osobu izbrisat nego i memoriju koju je zauzimala
+  free ima na predavanju
 
 Nisam bila na prve dvije vjezbe, tako da iskreno nije sve moje.
 Kombinirala sam predavanja i internet, za neke stvari sto mi nisu padale na pamet.
