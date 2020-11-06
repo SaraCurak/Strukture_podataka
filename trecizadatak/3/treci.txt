@@ -1,3 +1,0 @@
-bara c 4
-lara c 3
-sara c 2
