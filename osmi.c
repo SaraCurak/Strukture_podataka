@@ -4,8 +4,8 @@ povratak u prethodni direktorij. Toènije program treba preko menija simulirati
 korištenje DOS naredbi: 1- "md", 2 - "cd dir", 3 - "cd..", 4 - "dir" i 5 – izlaz.
 
 prof senta pokazao na satu
-dovrsit u main dodat pozive funkcija
-napravit meni priko switcha, kako kaze zad
+dovrsit u main dodat pozive funkcija- napravljeno
+napravit meni priko switcha, kako kaze zad - napravljeno
 */
 
 
