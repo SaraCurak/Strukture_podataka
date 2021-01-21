@@ -1,7 +1,7 @@
-/*8. Napisati program koji pomoÊu vezanih listi (stabala) predstavlja strukturu direktorija.
-OmoguÊiti unos novih direktorija i pod-direktorija, ispis sadrûaja direktorija i
-povratak u prethodni direktorij. ToËnije program treba preko menija simulirati
-koriötenje DOS naredbi: 1- "md", 2 - "cd dir", 3 - "cd..", 4 - "dir" i 5 ñ izlaz.
+/*8. Napisati program koji pomo√¶u vezanih listi (stabala) predstavlja strukturu direktorija.
+Omogu√¶iti unos novih direktorija i pod-direktorija, ispis sadr≈æaja direktorija i
+povratak u prethodni direktorij. To√®nije program treba preko menija simulirati
+kori≈°tenje DOS naredbi: 1- "md", 2 - "cd dir", 3 - "cd..", 4 - "dir" i 5 ‚Äì izlaz.
 
 prof senta pokazao na satu
 dovrsit u main dodat pozive funkcija
@@ -55,7 +55,44 @@ int main()
 	stack.next = NULL;
 
 	current = &mainDir;
-	/*dodat poziv funkcija*/
+	int x=6;
+	char temp[20];
+	while (x)
+	{
+		printf("1 - md\n");
+		printf("2 - cd dir\n");
+		printf("3 - cd..\n");
+		printf("4 - dir\n");
+		printf("0 - izlaz\n");
+		printf("\nIzbornik \n\n");
+		scanf(" %d", &x);
+
+		switch (x)
+		{
+		case 1:
+			printf("Unesite ime direktorija\n");
+			scanf(" %s", temp);
+			mainDir;
+			break;
+		case 2:
+			printf("Unesite ime direktorija \n");
+			scanf(" %s", temp);
+			current = findDirectory(current, temp);
+			break;
+		case 3:
+			current = popDirectory(temp);
+			break;
+		case 4:
+			deleteTree(mainDir);
+			break;
+		case 0:
+			printf("izlaz\n");
+			break;
+		default:
+			printf("Neispravan unos\n");
+			break;
+		}
+	}
 
 	deleteTree(mainDir);
 
